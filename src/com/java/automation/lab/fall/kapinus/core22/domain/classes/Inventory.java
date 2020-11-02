@@ -14,8 +14,8 @@ public class Inventory {
         listCardioEq = new HashMap<>();
     }
 
-    public Inventory(int inventoryNum, HashMap<Integer, CardioEquipment> listCardioEq,
-                     HashMap<Integer, PowerEquipment> listPowerEq){
+    public Inventory(int inventoryNum, Map<Integer, CardioEquipment> listCardioEq,
+                     Map<Integer, PowerEquipment> listPowerEq){
         this.inventoryNum = inventoryNum;
         this.listCardioEq = listCardioEq;
         this.listPowerEq = listPowerEq;
