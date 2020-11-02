@@ -4,10 +4,13 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Inventory {
-    Map<Integer, CardioEquipment> listCardioEq = new HashMap<>();
-    Map<Integer, PowerEquipment> listPowerEq = new HashMap<>();
+    private int inventoryNum;
+    private Map<Integer, CardioEquipment> listCardioEq = new HashMap<>();
+    private Map<Integer, PowerEquipment> listPowerEq = new HashMap<>();
 
-    public Inventory(Map<Integer, CardioEquipment> listCardioEq, Map<Integer, PowerEquipment> listPowerEq){
+    public Inventory(int inventoryNum, Map<Integer, CardioEquipment> listCardioEq,
+                     Map<Integer, PowerEquipment> listPowerEq){
+        this.inventoryNum = inventoryNum;
         this.listCardioEq = listCardioEq;
         this.listPowerEq = listPowerEq;
     }
