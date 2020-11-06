@@ -1,8 +1,7 @@
 package com.java.automation.lab.fall.kapinus.core22.domain.classes;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
+import java.util.Objects;
 
 public class GroupTraining {
     private String name;
@@ -23,6 +22,8 @@ public class GroupTraining {
     public void removeClients(int index) {
         clients.remove(index);
     }
+
+
 
     public String getName() {
         return name;
@@ -54,5 +55,31 @@ public class GroupTraining {
 
     public void setDuration(int duration) {
         this.duration = duration;
+    }
+
+    @Override
+    public String toString() {
+        return "GroupTraining{" +
+                "name='" + name + '\'' +
+                ", trainer=" + trainer +
+                ", clients=" + clients +
+                ", duration=" + duration +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        GroupTraining that = (GroupTraining) o;
+        return duration == that.duration &&
+                Objects.equals(name, that.name) &&
+                Objects.equals(trainer, that.trainer) &&
+                Objects.equals(clients, that.clients);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, trainer, clients, duration);
     }
 }
