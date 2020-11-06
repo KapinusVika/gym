@@ -9,7 +9,6 @@ public class TrainerFactory {
     public static <T extends Trainer> T createTrainer(
             String name, int age, TrainerSpecialization trainerSpecialization, int [][] schedule)
             throws AgeTrainerException, InvalidScheduleException {
-        T trainer = (T) new Trainer(name, age, trainerSpecialization, schedule);
-        return trainer;
+        return (T) new Trainer(name, age, trainerSpecialization, schedule);
     }
 }

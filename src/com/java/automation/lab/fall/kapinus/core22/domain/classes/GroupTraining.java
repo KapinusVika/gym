@@ -1,14 +1,16 @@
 package com.java.automation.lab.fall.kapinus.core22.domain.classes;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class GroupTraining {
     private String name;
     private Trainer trainer;
-    private ArrayList<Client> clients;
+    private List<Client> clients;
     private int duration;
 
-    public GroupTraining(String name, Trainer trainer, ArrayList<Client> clients, int duration){
+    public GroupTraining(String name, Trainer trainer, List<Client> clients, int duration){
         this.name = name;
         this.trainer = trainer;
         this.clients = clients;
@@ -38,11 +40,11 @@ public class GroupTraining {
         this.trainer = trainer;
     }
 
-    public ArrayList<Client> getClients() {
+    public List<Client> getClients() {
         return clients;
     }
 
-    public void setClients(ArrayList<Client> clients) {
+    public void setClients(List<Client> clients) {
         this.clients = clients;
     }
 

@@ -1,22 +1,16 @@
 package com.java.automation.lab.fall.kapinus.core22.domain.classes;
 
 
-public class CardioEquipment {
-    private String name;
+import java.util.Objects;
+
+public class CardioEquipment extends Equipment{
     private double maxWeight;
 
     public CardioEquipment(String name, double maxWeight){
-        this.name = name;
+        super(name);
         this.maxWeight = maxWeight;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public double getMaxWeight() {
         return maxWeight;
@@ -26,10 +20,12 @@ public class CardioEquipment {
         this.maxWeight = maxWeight;
     }
 
+
     @Override
     public String toString() {
-        return "CardioEquipment {\n\tname:" + name +
-                "\n\tmaxWeight:" + Double.toString(maxWeight) + "\n}";
+        return "CardioEquipment{" +
+                "maxWeight=" + maxWeight +
+                '}';
     }
 
     @Override
@@ -43,12 +39,11 @@ public class CardioEquipment {
         if (this == that) {
             return true;
         }
-        return  name.equals(((CardioEquipment)that).name) &&
-                maxWeight == ((CardioEquipment)that).maxWeight;
+        return maxWeight == ((CardioEquipment)that).maxWeight;
     }
 
     @Override
     public int hashCode() {
-        return (name.hashCode() * 31);
+        return Objects.hash(super.hashCode(), maxWeight);
     }
 }

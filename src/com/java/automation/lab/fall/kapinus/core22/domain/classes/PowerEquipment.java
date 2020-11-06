@@ -1,25 +1,17 @@
 package com.java.automation.lab.fall.kapinus.core22.domain.classes;
 
 
-public class PowerEquipment {
-    private String name;
+import java.util.Objects;
+
+public class PowerEquipment extends Equipment {
     private String workingMuscle;
     private double maxWorkingWeight;
 
 
-    public PowerEquipment(String name, String workingMuscle,
-                          double maxWorkingWeight){
-        this.name = name;
+    public PowerEquipment(String name, String workingMuscle, double maxWorkingWeight){
+        super(name);
         this.workingMuscle = workingMuscle;
         this.maxWorkingWeight = maxWorkingWeight;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public String getWorkingMuscle() {
@@ -38,12 +30,13 @@ public class PowerEquipment {
         this.maxWorkingWeight = maxWorkingWeight;
     }
 
+
     @Override
     public String toString() {
-        return "PowerEquipment {\n\tname:" + name +
-                "\n\tworkingMuscle:" + workingMuscle +
-                "\n\tmaxWorkingWeight:" + Double.toString(maxWorkingWeight) +
-                "\n}";
+        return "PowerEquipment{" +
+                "workingMuscle='" + workingMuscle + '\'' +
+                ", maxWorkingWeight=" + maxWorkingWeight +
+                '}';
     }
 
     @Override
@@ -58,14 +51,12 @@ public class PowerEquipment {
             return true;
         }
 
-        return  name.equals(((PowerEquipment)that).name) &&
-                workingMuscle.equals(((PowerEquipment)that).workingMuscle) &&
+        return  workingMuscle.equals(((PowerEquipment)that).workingMuscle) &&
                 maxWorkingWeight == ((PowerEquipment)that).maxWorkingWeight;
     }
 
     @Override
     public int hashCode() {
-        String mW = Double.toString(maxWorkingWeight);
-        return (name.hashCode() * 13) + mW.hashCode();
+        return Objects.hash(super.hashCode(), workingMuscle, maxWorkingWeight);
     }
 }

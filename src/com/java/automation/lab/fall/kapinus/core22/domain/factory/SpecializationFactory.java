@@ -31,7 +31,6 @@ public class SpecializationFactory {
         return new Trainer(name, age, TrainerSpecialization.ZUMBA, schedule);
     }
 
-
     public static Trainer createTrainerYoga
             (String name, int age, int [][] schedule) throws AgeTrainerException, InvalidScheduleException {
         return new Trainer(name, age, TrainerSpecialization.YOGA, schedule);
