@@ -23,7 +23,10 @@ public class GroupTraining {
         clients.remove(index);
     }
 
+    public double averageAge(){
+        return this.clients.stream().mapToInt(client -> client.getAge()).average().getAsDouble();
 
+    }
 
     public String getName() {
         return name;
@@ -56,6 +59,8 @@ public class GroupTraining {
     public void setDuration(int duration) {
         this.duration = duration;
     }
+
+
 
     @Override
     public String toString() {
