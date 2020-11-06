@@ -3,25 +3,25 @@ package com.java.automation.lab.fall.kapinus.core22.domain.classes;
 import java.util.Objects;
 
 public abstract class Equipment {
-    private String name;
+    private DescriptionEquipment descriptionEquipment;
 
-    public Equipment(String name){
-        this.name = name;
+    public Equipment(DescriptionEquipment descriptionEquipment){
+        this.descriptionEquipment = descriptionEquipment;
     }
 
-    public String getName() {
-        return name;
+    public DescriptionEquipment getDescriptionEquipment() {
+        return descriptionEquipment;
     }
 
-    public Equipment setName(String name) {
-        this.name = name;
-        return null;
+    public Equipment setDescriptionEquipment(DescriptionEquipment descriptionEquipment) {
+        this.descriptionEquipment = descriptionEquipment;
+        return this;
     }
 
     @Override
     public String toString() {
         return "Equipment{" +
-                "name='" + name + '\'' +
+                "descriptionEquipment=" + descriptionEquipment +
                 '}';
     }
 
@@ -30,12 +30,12 @@ public abstract class Equipment {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Equipment equipment = (Equipment) o;
-        return Objects.equals(name, equipment.name);
+        return Objects.equals(descriptionEquipment, equipment.descriptionEquipment);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(name);
+        return Objects.hash(descriptionEquipment);
     }
 }
 

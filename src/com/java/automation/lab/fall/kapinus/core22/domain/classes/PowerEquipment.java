@@ -8,8 +8,8 @@ public class PowerEquipment extends Equipment {
     private double maxWorkingWeight;
 
 
-    public PowerEquipment(String name, String workingMuscle, double maxWorkingWeight){
-        super(name);
+    public PowerEquipment(DescriptionEquipment descriptionEquipment, String workingMuscle, double maxWorkingWeight){
+        super(descriptionEquipment);
         this.workingMuscle = workingMuscle;
         this.maxWorkingWeight = maxWorkingWeight;
     }

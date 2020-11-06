@@ -6,8 +6,8 @@ import java.util.Objects;
 public class CardioEquipment extends Equipment{
     private double maxWeight;
 
-    public CardioEquipment(String name, double maxWeight){
-        super(name);
+    public CardioEquipment(DescriptionEquipment descriptionEquipment, double maxWeight){
+        super(descriptionEquipment);
         this.maxWeight = maxWeight;
     }
 
