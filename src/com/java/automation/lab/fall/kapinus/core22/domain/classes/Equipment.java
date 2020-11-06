@@ -13,8 +13,9 @@ public abstract class Equipment {
         return name;
     }
 
-    public void setName(String name) {
+    public Equipment setName(String name) {
         this.name = name;
+        return null;
     }
 
     @Override
