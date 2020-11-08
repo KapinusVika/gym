@@ -6,11 +6,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Semaphore;
 
-public class ThreadForClient {
-
-    static class ClientsBooking extends Thread {
-        Semaphore counter;
-        Object client;
+class ClientsBooking extends Thread {
+    Semaphore counter;
+    Object client;
 
         ClientsBooking(Semaphore counter, Object client){
             this.client = client;
@@ -32,7 +30,6 @@ public class ThreadForClient {
                 System.out.println ("Client " + client + " have a problem with booking");
             }
         }
-    }
 
     public static void main(String [] args){
         List<Client> clients = new ArrayList<>();
@@ -48,3 +45,4 @@ public class ThreadForClient {
         }
     }
 }
+
