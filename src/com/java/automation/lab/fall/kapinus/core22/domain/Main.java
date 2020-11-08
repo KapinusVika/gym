@@ -3,7 +3,6 @@ package com.java.automation.lab.fall.kapinus.core22.domain;
 
 import com.java.automation.lab.fall.kapinus.core22.domain.classes.Trainer;
 import com.java.automation.lab.fall.kapinus.core22.domain.enums.TrainerSpecialization;
-import com.java.automation.lab.fall.kapinus.core22.domain.factory.TrainerFactory;
 
 public class Main {
     public static void main(String[] args){
