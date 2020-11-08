@@ -10,7 +10,6 @@ public class ThreadForClient {
 
     static class ClientsBooking extends Thread {
         Semaphore counter;
-        int num = 0;
         Object client;
 
         ClientsBooking(Semaphore counter, Object client){
@@ -23,7 +22,6 @@ public class ThreadForClient {
                 counter.acquire();
                 System.out.println ("Client " + client + " creates a booking");
                 sleep(1000);
-                num++;
 
                 System.out.println ("Client " + client + " finished booking");
                 counter.release();
