@@ -2,7 +2,7 @@ package com.java.automation.lab.fall.kapinus.core22.domain;
 
 class Booking {
 
-    synchronized void book(String msg) {
+    public synchronized void book(String msg) {
         System.out.print("[" + msg);
         try {
             Thread.sleep(1000);
@@ -18,11 +18,11 @@ class Booking {
         Booking booking;
         Thread b;
 
+
         public BookingThread(Booking booking, String msg) {
             this.msg = msg;
             this.booking = booking;
-            this.b = new Thread(this);
-            this.b.start();
+
         }
 
         @Override
@@ -32,6 +32,8 @@ class Booking {
         }
 
     public static void main(String[] args) {
+        Thread b = new Thread();
+        b.start();
         Booking booking = new Booking();
         BookingThread cl = new BookingThread(booking, "Client 1 finished booking");
         BookingThread c2 = new BookingThread(booking, "Client 2 finished booking");
