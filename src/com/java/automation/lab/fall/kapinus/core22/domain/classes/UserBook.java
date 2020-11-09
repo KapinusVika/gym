@@ -1,5 +1,7 @@
 package com.java.automation.lab.fall.kapinus.core22.domain.classes;
 
+import com.java.automation.lab.fall.kapinus.core22.domain.Booking;
+
 public class UserBook {
     int day;
     int hour;
@@ -21,5 +23,23 @@ public class UserBook {
         return (reception.booking(trainer, userBook));
     }
 
+    public class BookingThread implements Runnable {
+        String msg;
+        Booking booking;
+        Thread b;
 
+
+        public BookingThread(Booking booking, String msg) {
+            this.msg = msg;
+            this.booking = booking;
+            this.b = new Thread();
+            this.b.start();
+
+        }
+
+        @Override
+        public void run() {
+            booking.book(msg);
+        }
+    }
 }
