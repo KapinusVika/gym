@@ -65,8 +65,15 @@ public class Client {
         this.trainingProgram = trainingProgram;
     }
 
+    public Subscription getSubscription() {
+        return subscription;
+    }
 
-        @Override
+    public void setSubscription(Subscription subscription) {
+        this.subscription = subscription;
+    }
+
+    @Override
         public String toString() {
             return "Client {\n\tname:" + name +
                     "\n\tage:" + Integer.toString(age) +
