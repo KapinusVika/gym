@@ -1,6 +1,6 @@
 package com.java.automation.lab.fall.kapinus.core22.domain.classes;
 
-import com.java.automation.lab.fall.kapinus.core22.domain.Booking;
+
 import com.java.automation.lab.fall.kapinus.core22.domain.enums.AgeGroups;
 import com.java.automation.lab.fall.kapinus.core22.domain.exceptions.AgeClientException;
 

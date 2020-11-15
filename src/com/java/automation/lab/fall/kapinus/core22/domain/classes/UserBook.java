@@ -23,10 +23,10 @@ public class UserBook {
         return (reception.booking(trainer, userBook));
     }
 
-    public class BookingThread implements Runnable {
+    public static class BookingThread implements Runnable {
         String msg;
         Booking booking;
-        Thread b;
+        public Thread b;
 
 
         public BookingThread(Booking booking, String msg) {

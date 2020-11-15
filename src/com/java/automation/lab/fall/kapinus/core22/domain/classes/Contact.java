@@ -1,6 +1,5 @@
 package com.java.automation.lab.fall.kapinus.core22.domain.classes;
 
-
 import java.net.URL;
 
 public class Contact {
