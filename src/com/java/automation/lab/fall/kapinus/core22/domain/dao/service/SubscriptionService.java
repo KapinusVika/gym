@@ -7,6 +7,7 @@ import com.java.automation.lab.fall.kapinus.core22.domain.dao.impl.SubscriptionD
 import java.util.List;
 
 public class SubscriptionService {
+    f
 
     private static final SubscriptionDAO SUBSCRIPTION_DAO = SubscriptionDAOImpl.getInstance();
 

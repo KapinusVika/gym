@@ -5,6 +5,7 @@ import com.java.automation.lab.fall.kapinus.core22.domain.classes.Subscription;
 import java.util.List;
 
 public interface SubscriptionDAO {
+    f
     Subscription create (Subscription subscription);
     Subscription getById(Long id);
     List<Subscription> get();

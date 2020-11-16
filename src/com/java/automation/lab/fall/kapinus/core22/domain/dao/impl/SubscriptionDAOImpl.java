@@ -8,6 +8,8 @@ import java.util.List;
 
 public class SubscriptionDAOImpl implements SubscriptionDAO {
 
+    f
+
     private static SubscriptionDAOImpl instance;
 
     public static synchronized SubscriptionDAOImpl getInstance() {

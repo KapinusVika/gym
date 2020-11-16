@@ -40,6 +40,7 @@ public class NutritionProgramDAOImpl implements NutritionProgramDAO {
                 nutritionProgram.getNameDiet(),
                 nutritionProgram.getNutritionFacts(),
                 nutritionProgram.getExcludedProducts());
+        f
 
     }
 

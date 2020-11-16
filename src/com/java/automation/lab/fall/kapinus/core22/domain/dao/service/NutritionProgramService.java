@@ -7,6 +7,8 @@ import com.java.automation.lab.fall.kapinus.core22.domain.dao.impl.NutritionProg
 import java.util.List;
 
 public class NutritionProgramService {
+
+    f
     private static final NutritionProgramDAO NUTRITION_PROGRAM_DAO = NutritionProgramDAOImpl.getInstance();
 
     public static NutritionProgram createClient(NutritionProgram nutritionProgram){
