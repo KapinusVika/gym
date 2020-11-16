@@ -7,7 +7,6 @@ import com.java.automation.lab.fall.kapinus.core22.domain.dao.impl.TrainingProgr
 import java.util.List;
 
 public class TrainingProgramService {
-    f
 
     private static final TrainingProgramDAO TRAINING_PROGRAM_DAO = TrainingProgramDAOImpl.getInstance();
 

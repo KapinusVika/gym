@@ -5,7 +5,6 @@ import com.java.automation.lab.fall.kapinus.core22.domain.classes.NutritionProgr
 import java.util.List;
 
 public interface NutritionProgramDAO {
-    f
     NutritionProgram create (NutritionProgram nutritionProgram);
     NutritionProgram getById(Long id);
     List<NutritionProgram> get();

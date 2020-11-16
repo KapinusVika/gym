@@ -8,7 +8,6 @@ import java.util.List;
 
 public class NutritionProgramService {
 
-    f
     private static final NutritionProgramDAO NUTRITION_PROGRAM_DAO = NutritionProgramDAOImpl.getInstance();
 
     public static NutritionProgram createClient(NutritionProgram nutritionProgram){

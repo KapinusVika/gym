@@ -8,8 +8,6 @@ import java.util.List;
 
 public class TrainingProgramDAOImpl implements TrainingProgramDAO {
 
-    f
-
     private static TrainingProgramDAOImpl instance;
 
     public static synchronized TrainingProgramDAOImpl getInstance() {
