@@ -8,11 +8,6 @@ import java.util.List;
 
 public class ContactService {
 
-    private static final PropertyReader PROPS = PropertyReader.getInstance();
-    private static final Map<String, Contact> CONTACT_DAOS = Map.of(
-            "MOCK", new com.java.automation.lab.fall.kapinus.core22.dao.impl.mock.ContactDAOImpl(),
-            );
-
     private static final ContactDAO CONTACT_DAO=
             CONTACT_DAOS.get(PROPS.getValue(PropertyConstant.ENV_KEY));
 

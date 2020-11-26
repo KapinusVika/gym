@@ -9,11 +9,6 @@ import java.util.List;
 
 public class DescriptionEquipmentService {
 
-    private static final PropertyReader PROPS = PropertyReader.getInstance();
-    private static final Map<String, DescriptionEquipmen> DESCRIPTION_EQUIPMENT_DAOS = Map.of(
-            "MOCK", new com.java.automation.lab.fall.kapinus.core22.dao.impl.mock.DescriptionEquipmentDAOImpl(),
-            );
-
     private static final DescriptionEquipmentDAO DESCRIPTION_EQUIPMENT_DAO=
             DESCRIPTION_EQUIPMENT_DAOS.get(PROPS.getValue(PropertyConstant.ENV_KEY));
 

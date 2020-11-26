@@ -8,11 +8,6 @@ import java.util.List;
 
 public class PowerEquipmentService {
 
-    private static final PropertyReader PROPS = PropertyReader.getInstance();
-    private static final Map<String, PowerEquipment> POWER_EQUIPMENT_DAOS = Map.of(
-            "MOCK", new com.java.automation.lab.fall.kapinus.core22.dao.impl.mock.PowerEquipmentDAOImpl(),
-            );
-
     private static final PowerEquipmentDAO POWER_EQUIPMENT_DAO =
             POWER_EQUIPMENT_DAOS.get(PROPS.getValue(PropertyConstant.ENV_KEY));
 

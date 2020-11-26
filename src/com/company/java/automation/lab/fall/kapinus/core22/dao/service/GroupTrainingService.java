@@ -8,11 +8,6 @@ import java.util.List;
 
 public class GroupTrainingService {
 
-    private static final PropertyReader PROPS = PropertyReader.getInstance();
-    private static final Map<String, GroupTraining> GROUP_TRAINING_DAOS = Map.of(
-            "MOCK", new com.java.automation.lab.fall.kapinus.core22.dao.impl.mock.GroupTrainingDAOImpl(),
-            );
-
     private static final GroupTrainingDAO GROUP_TRAINING_DAO=
             GROUP_TRAINING_DAOS.get(PROPS.getValue(PropertyConstant.ENV_KEY));
 

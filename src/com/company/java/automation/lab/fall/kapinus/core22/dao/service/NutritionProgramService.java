@@ -8,11 +8,6 @@ import java.util.List;
 
 public class NutritionProgramService {
 
-    private static final PropertyReader PROPS = PropertyReader.getInstance();
-    private static final Map<String, NutritionProgram> NUTRITION_PROGRAM_DAOS = Map.of(
-            "MOCK", new com.java.automation.lab.fall.kapinus.core22.dao.impl.mock.NutritionProgramDAOImpl(),
-            );
-
     private static final NutritionProgramDAO NUTRITION_PROGRAM_DAO=
             NUTRITION_PROGRAM_DAOS.get(PROPS.getValue(PropertyConstant.ENV_KEY));
 

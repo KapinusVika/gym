@@ -8,11 +8,6 @@ import java.util.List;
 
 public class SubscriptionService {
 
-    private static final PropertyReader PROPS = PropertyReader.getInstance();
-    private static final Map<String, Subscription> SUBSCRIPTION_DAOS = Map.of(
-            "MOCK", new com.java.automation.lab.fall.kapinus.core22.dao.impl.mock.SubscriptionDAOImpl(),
-            );
-
     private static final SubscriptionDAO SUBSCRIPTION_DAO =
             SUBSCRIPTION_DAOS.get(PROPS.getValue(PropertyConstant.ENV_KEY));
 

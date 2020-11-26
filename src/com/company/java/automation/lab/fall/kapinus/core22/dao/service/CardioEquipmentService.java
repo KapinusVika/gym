@@ -8,11 +8,6 @@ import java.util.List;
 
 public class CardioEquipmentService {
 
-    private static final PropertyReader PROPS = PropertyReader.getInstance();
-    private static final Map<String, CardioEquipmentDAO> CARDIO_EQUIPMENT_DAOS = Map.of(
-            "MOCK", new com.java.automation.lab.fall.kapinus.core22.dao.impl.mock.CardioEquipmentDAOImpl(),
-            );
-
     private static final CardioEquipmentDAO CARDIO_EQUIPMENT_DAO =
             CARDIO_EQUIPMENT_DAOS.get(PROPS.getValue(PropertyConstant.ENV_KEY));
 

@@ -9,11 +9,6 @@ import java.util.List;
 
 public class PricePlanService {
 
-    private static final PropertyReader PROPS = PropertyReader.getInstance();
-    private static final Map<String, PricePlan> PRICE_PLAN_DAOS = Map.of(
-            "MOCK", new com.java.automation.lab.fall.kapinus.core22.dao.impl.mock.PricePlanDAOImpl(),
-            );
-
     private static final PricePlanDAO PRICE_PLAN_DAO =
             PRICE_PLAN_DAOS.get(PROPS.getValue(PropertyConstant.ENV_KEY));
 

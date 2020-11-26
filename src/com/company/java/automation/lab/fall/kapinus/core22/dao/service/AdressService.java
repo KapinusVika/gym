@@ -8,11 +8,6 @@ import java.util.List;
 
 public class AdressService {
 
-    private static final PropertyReader PROPS = PropertyReader.getInstance();
-    private static final Map<String, AdressDAO> ADRESS_DAOS = Map.of(
-            "MOCK", new com.java.automation.lab.fall.kapinus.core22.dao.impl.mock.AdressDAOImpl(),
-    );
-
     private static final AdressDAO ADRESS_DAO = ADRESS_DAOS.get(PROPS.getValue(PropertyConstant.ENV_KEY));
 
     public static Adress createAdress(Adress adress){

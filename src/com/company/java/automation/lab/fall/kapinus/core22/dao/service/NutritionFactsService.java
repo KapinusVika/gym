@@ -9,11 +9,6 @@ import java.util.List;
 
 public class NutritionFactsService {
 
-    private static final PropertyReader PROPS = PropertyReader.getInstance();
-    private static final Map<String, NutritionFacts> NUTRITION_FACTS_DAOS = Map.of(
-            "MOCK", new com.java.automation.lab.fall.kapinus.core22.dao.impl.mock.NutritionFactsDAOImpl(),
-            );
-
     private static final NutritionFactsDAO NUTRITION_FACTS_DAO=
             NUTRITION_FACTS_DAOS.get(PROPS.getValue(PropertyConstant.ENV_KEY));
 

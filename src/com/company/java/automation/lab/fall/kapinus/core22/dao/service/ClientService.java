@@ -9,11 +9,6 @@ import java.util.List;
 
 public class ClientService {
 
-    private static final PropertyReader PROPS = PropertyReader.getInstance();
-    private static final Map<String, Client> CLIENT_DAOS = Map.of(
-            "MOCK", new com.java.automation.lab.fall.kapinus.core22.dao.impl.mock.ClientDAOImpl(),
-            );
-
     private static final ClientDAO CLIENT_DAO =
             CLIENT_DAOS.get(PROPS.getValue(PropertyConstant.ENV_KEY));
 

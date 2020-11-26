@@ -10,11 +10,6 @@ import java.util.List;
 
 public class TrainerService {
 
-    private static final PropertyReader PROPS = PropertyReader.getInstance();
-    private static final Map<String, Trainer> TRAINER_DAOS = Map.of(
-            "MOCK", new com.java.automation.lab.fall.kapinus.core22.dao.impl.mock.TrainerDAOImpl(),
-            );
-
     private static final TrainerDAO TRAINER_DAO =
             TRAINER_DAOS.get(PROPS.getValue(PropertyConstant.ENV_KEY));
 
