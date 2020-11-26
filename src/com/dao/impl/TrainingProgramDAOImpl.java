@@ -1,12 +1,12 @@
 package com.dao.impl;
 
-import com.java.automation.lab.fall.kapinus.core22.domain.classes.TrainingProgram;
-import com.dao.daoAll.TrainingProgramDAO;
+import com.dao.daoModel.DAO;
+import com.domain.TrainingProgram;
 import com.exceptions.NotImplementetExc;
 
 import java.util.List;
 
-public class TrainingProgramDAOImpl implements TrainingProgramDAO {
+public class TrainingProgramDAOImpl implements DAO<TrainingProgram> {
 
     private static TrainingProgramDAOImpl instance;
 

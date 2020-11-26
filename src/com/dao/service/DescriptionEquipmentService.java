@@ -1,8 +1,8 @@
 package com.dao.service;
 
 
-import com.java.automation.lab.fall.kapinus.core22.domain.classes.DescriptionEquipment;
-import com.dao.daoAll.DescriptionEquipmentDAO;
+import com.domain.DescriptionEquipment;
+import com.dao.daoModel.DescriptionEquipmentDAO;
 import com.dao.impl.DescriptionEquipmentDAOImpl;
 
 import java.util.List;

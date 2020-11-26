@@ -1,7 +1,7 @@
 package com.dao.service;
 
-import com.java.automation.lab.fall.kapinus.core22.domain.classes.TrainingProgram;
-import com.dao.daoAll.TrainingProgramDAO;
+import com.domain.TrainingProgram;
+import com.dao.daoModel.TrainingProgramDAO;
 import com.dao.impl.TrainingProgramDAOImpl;
 
 import java.util.List;

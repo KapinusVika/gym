@@ -1,12 +1,12 @@
 package com.dao.impl;
 
-import com.java.automation.lab.fall.kapinus.core22.domain.classes.Contact;
-import com.dao.daoAll.ContactDAO;
+import com.dao.daoModel.DAO;
+import com.domain.Contact;
 import com.exceptions.NotImplementetExc;
 
 import java.util.List;
 
-public class ContactDAOImpl implements ContactDAO {
+public class ContactDAOImpl implements DAO<Contact> {
 
     private static ContactDAOImpl instance;
 

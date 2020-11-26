@@ -1,12 +1,12 @@
 package com.dao.impl;
 
-import com.java.automation.lab.fall.kapinus.core22.domain.classes.Subscription;
-import com.dao.daoAll.SubscriptionDAO;
+import com.dao.daoModel.DAO;
+import com.domain.Subscription;
 import com.exceptions.NotImplementetExc;
 
 import java.util.List;
 
-public class SubscriptionDAOImpl implements SubscriptionDAO {
+public class SubscriptionDAOImpl implements DAO<Subscription> {
 
     private static SubscriptionDAOImpl instance;
 

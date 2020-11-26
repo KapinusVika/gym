@@ -1,7 +1,7 @@
 package com.dao.service;
 
-import com.java.automation.lab.fall.kapinus.core22.domain.classes.PowerEquipment;
-import com.dao.daoAll.PowerEquipmentDAO;
+import com.domain.PowerEquipment;
+import com.dao.daoModel.PowerEquipmentDAO;
 import com.dao.impl.PowerEquipmentDAOImpl;
 
 import java.util.List;

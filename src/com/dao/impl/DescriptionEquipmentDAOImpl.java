@@ -1,12 +1,12 @@
 package com.dao.impl;
 
-import com.java.automation.lab.fall.kapinus.core22.domain.classes.DescriptionEquipment;
-import com.dao.daoAll.DescriptionEquipmentDAO;
+import com.dao.daoModel.DAO;
+import com.domain.DescriptionEquipment;
 import com.exceptions.NotImplementetExc;
 
 import java.util.List;
 
-public class DescriptionEquipmentDAOImpl implements DescriptionEquipmentDAO {
+public class DescriptionEquipmentDAOImpl implements DAO<DescriptionEquipment> {
 
     private static DescriptionEquipmentDAOImpl instance;
 

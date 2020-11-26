@@ -1,7 +1,7 @@
 package com.dao.impl;
 
-import com.java.automation.lab.fall.kapinus.core22.domain.classes.PricePlan;
-import com.dao.daoAll.PricePlanDAO;
+import com.dao.daoModel.PricePlanDAO;
+import com.domain.PricePlan;
 import com.exceptions.InvalidDiscountException;
 import com.exceptions.NotImplementetExc;
 

@@ -1,7 +1,7 @@
 package com.dao.service;
 
-import com.java.automation.lab.fall.kapinus.core22.domain.classes.CardioEquipment;
-import com.dao.daoAll.CardioEquipmentDAO;
+import com.domain.CardioEquipment;
+import com.dao.daoModel.CardioEquipmentDAO;
 import com.dao.impl.CardioEquipmentDAOImpl;
 
 import java.util.List;

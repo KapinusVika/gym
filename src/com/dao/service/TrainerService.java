@@ -1,7 +1,7 @@
 package com.dao.service;
 
-import com.java.automation.lab.fall.kapinus.core22.domain.classes.Trainer;
-import com.dao.daoAll.TrainerDAO;
+import com.domain.Trainer;
+import com.dao.daoModel.TrainerDAO;
 import com.dao.impl.TrainerDAOImpl;
 import com.exceptions.AgeTrainerException;
 import com.exceptions.InvalidScheduleException;

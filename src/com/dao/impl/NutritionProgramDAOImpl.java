@@ -1,12 +1,12 @@
 package com.dao.impl;
 
-import com.java.automation.lab.fall.kapinus.core22.domain.classes.NutritionProgram;
-import com.dao.daoAll.NutritionProgramDAO;
+import com.dao.daoModel.DAO;
+import com.domain.NutritionProgram;
 import com.exceptions.NotImplementetExc;
 
 import java.util.List;
 
-public class NutritionProgramDAOImpl implements NutritionProgramDAO {
+public class NutritionProgramDAOImpl implements DAO<NutritionProgram> {
 
     private static NutritionProgramDAOImpl instance;
 

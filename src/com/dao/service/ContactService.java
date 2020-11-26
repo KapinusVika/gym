@@ -1,7 +1,7 @@
 package com.dao.service;
 
-import com.java.automation.lab.fall.kapinus.core22.domain.classes.Contact;
-import com.dao.daoAll.ContactDAO;
+import com.domain.Contact;
+import com.dao.daoModel.ContactDAO;
 import com.dao.impl.ContactDAOImpl;
 
 import java.util.List;

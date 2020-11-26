@@ -1,7 +1,7 @@
 package com.dao.service;
 
-import com.java.automation.lab.fall.kapinus.core22.domain.classes.Adress;
-import com.dao.daoAll.AdressDAO;
+import com.domain.Adress;
+import com.dao.daoModel.AdressDAO;
 import com.dao.impl.AdressDAOImpl;
 
 import java.util.List;

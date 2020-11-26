@@ -1,12 +1,12 @@
 package com.dao.impl;
 
-import com.java.automation.lab.fall.kapinus.core22.domain.classes.PowerEquipment;
-import com.dao.daoAll.PowerEquipmentDAO;
+import com.dao.daoModel.DAO;
+import com.domain.PowerEquipment;
 import com.exceptions.NotImplementetExc;
 
 import java.util.List;
 
-public class PowerEquipmentDAOImpl implements PowerEquipmentDAO {
+public class PowerEquipmentDAOImpl implements DAO<PowerEquipment> {
 
     private static PowerEquipmentDAOImpl instance;
 

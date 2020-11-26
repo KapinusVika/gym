@@ -1,7 +1,7 @@
 package com.dao.service;
 
-import com.java.automation.lab.fall.kapinus.core22.domain.classes.NutritionProgram;
-import com.dao.daoAll.NutritionProgramDAO;
+import com.domain.NutritionProgram;
+import com.dao.daoModel.NutritionProgramDAO;
 import com.dao.impl.NutritionProgramDAOImpl;
 
 import java.util.List;

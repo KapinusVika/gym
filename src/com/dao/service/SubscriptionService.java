@@ -1,7 +1,7 @@
 package com.dao.service;
 
-import com.java.automation.lab.fall.kapinus.core22.domain.classes.Subscription;
-import com.dao.daoAll.SubscriptionDAO;
+import com.domain.Subscription;
+import com.dao.daoModel.SubscriptionDAO;
 import com.dao.impl.SubscriptionDAOImpl;
 
 import java.util.List;

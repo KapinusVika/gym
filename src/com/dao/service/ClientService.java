@@ -1,7 +1,7 @@
 package com.dao.service;
 
-import com.java.automation.lab.fall.kapinus.core22.domain.classes.Client;
-import com.dao.daoAll.ClientDAO;
+import com.domain.Client;
+import com.dao.daoModel.ClientDAO;
 import com.dao.impl.ClientDAOImpl;
 import com.exceptions.AgeClientException;
 

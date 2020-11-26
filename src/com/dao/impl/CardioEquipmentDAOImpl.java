@@ -1,12 +1,12 @@
 package com.dao.impl;
 
-import com.java.automation.lab.fall.kapinus.core22.domain.classes.CardioEquipment;
-import com.dao.daoAll.CardioEquipmentDAO;
+import com.dao.daoModel.DAO;
+import com.domain.CardioEquipment;
 import com.exceptions.NotImplementetExc;
 
 import java.util.List;
 
-public class CardioEquipmentDAOImpl implements CardioEquipmentDAO {
+public class CardioEquipmentDAOImpl implements DAO<CardioEquipment> {
 
     private static CardioEquipmentDAOImpl instance;
 

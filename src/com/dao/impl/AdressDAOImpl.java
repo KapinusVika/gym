@@ -1,12 +1,12 @@
 package com.dao.impl;
 
-import com.java.automation.lab.fall.kapinus.core22.domain.classes.Adress;
-import com.dao.daoAll.AdressDAO;
+import com.dao.daoModel.DAO;
+import com.domain.Adress;
 import com.exceptions.NotImplementetExc;
 
 import java.util.List;
 
-public class AdressDAOImpl implements AdressDAO {
+public class AdressDAOImpl implements DAO<Adress> {
 
     private static AdressDAOImpl instance;
 

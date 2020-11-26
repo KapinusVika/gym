@@ -1,7 +1,7 @@
 package com.dao.service;
 
-import com.java.automation.lab.fall.kapinus.core22.domain.classes.NutritionFacts;
-import com.dao.daoAll.NutritionFactsDAO;
+import com.domain.NutritionFacts;
+import com.dao.daoModel.NutritionFactsDAO;
 import com.dao.impl.NutritionFactsDAOImpl;
 import com.exceptions.InvalidCaloriesException;
 
