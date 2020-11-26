@@ -1,15 +1,17 @@
 package com.java.automation.lab.fall.kapinus.core22.domain.classes;
 
-import java.util.List;
+import java.util.Objects;
 
 public class TrainingProgram {
     private String nameTraining;
-    private List<Training> exercises;
+    private CardioTraining cardioTraining;
+    private PowerTraining powerTraining;
 
 
-    public TrainingProgram(String nameTraining, List<Training> exercises){
+    public TrainingProgram(String nameTraining, CardioTraining cardioTraining, PowerTraining powerTraining){
         this.nameTraining = nameTraining;
-        this.exercises = exercises;
+        this.cardioTraining = cardioTraining;
+        this.powerTraining = powerTraining;
 
     }
 
@@ -21,33 +23,40 @@ public class TrainingProgram {
         this.nameTraining = nameTraining;
     }
 
-    public List<Training> getExercises() {
-        return exercises;
+    public CardioTraining getCardioTraining() {
+        return cardioTraining;
     }
 
-    public void setExercises(List<Training> exercises) {
-        this.exercises = exercises;
+    public void setCardioTraining(CardioTraining cardioTraining) {
+        this.cardioTraining = cardioTraining;
+    }
+
+    public PowerTraining getPowerTraining() {
+        return powerTraining;
+    }
+
+    public void setPowerTraining(PowerTraining powerTraining) {
+        this.powerTraining = powerTraining;
     }
 
     @Override
     public String toString() {
-        return "TrainingProgram {\n\tnameTraining:" + nameTraining +
-                "\n\texercises:" + exercises + "\n}";
+        return "TrainingProgram{" +
+                "nameTraining='" + nameTraining + '\'' +
+                ", cardioTraining=" + cardioTraining +
+                ", powerTraining=" + powerTraining +
+                '}';
     }
 
+
     @Override
-    public boolean equals(Object that) {
-        if (that == null) {
-            return false;
-        }
-        if (this.getClass() != that.getClass()) {
-            return false;
-        }
-        if (this == that) {
-            return true;
-        }
-        return  nameTraining.equals(((TrainingProgram)that).nameTraining) &&
-                exercises.equals(((TrainingProgram)that).exercises);
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        TrainingProgram that = (TrainingProgram) o;
+        return Objects.equals(nameTraining, that.nameTraining) &&
+                Objects.equals(cardioTraining, that.cardioTraining) &&
+                Objects.equals(powerTraining, that.powerTraining);
     }
 
     @Override

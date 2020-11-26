@@ -1,9 +1,5 @@
 package com.java.automation.lab.fall.kapinus.core22.domain;
 
-
-import com.java.automation.lab.fall.kapinus.core22.domain.classes.Trainer;
-import com.java.automation.lab.fall.kapinus.core22.domain.enums.TrainerSpecialization;
-
 public class Main {
     public static void main(String[] args){
         String pathAgeGroup = "src/resources/ageGroup.dict";

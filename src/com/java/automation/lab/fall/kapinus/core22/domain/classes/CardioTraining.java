@@ -6,9 +6,9 @@ public class CardioTraining extends Training {
     private CardioEquipment equipment;
     private double duration;
 
-    public CardioTraining(String name, Trainer trainer, Client client, int sets, int reps,
+    public CardioTraining(String name, Trainer trainer, Client client,
                           CardioEquipment equipment, double duration){
-        super(name, trainer, client, sets, reps);
+        super(name, trainer, client);
         this.equipment = equipment;
         this.duration = duration;
 

@@ -1,19 +1,17 @@
 package com.java.automation.lab.fall.kapinus.core22.domain.classes;
 
 
+import java.util.Objects;
+
 public class Training {
     private String name;
     private Trainer trainer;
     private Client client;
-    private int sets;
-    private int reps;
 
-    public Training(String name, Trainer trainer, Client client, int sets, int reps){
+    public Training(String name, Trainer trainer, Client client){
         this.name = name;
         this.trainer = trainer;
         this.client = client;
-        this.sets = sets;
-        this.reps = reps;
     }
 
     public String getName() {
@@ -40,29 +38,11 @@ public class Training {
         this.client = client;
     }
 
-    public int getSets() {
-        return sets;
-    }
-
-    public void setSets(int sets) {
-        this.sets = sets;
-    }
-
-    public int getReps() {
-        return reps;
-    }
-
-    public void setReps(int reps) {
-        this.reps = reps;
-    }
-
     @Override
     public String toString() {
         return "Training {\n\tname:" + name +
                 "\n\ttrainer:" + trainer +
                 "\n\tclient:" + client +
-                "\n\tsets:" + Integer.toString(sets) +
-                "\n\treps:" + Integer.toString(reps) +
                 "\n}";
     }
 
@@ -79,13 +59,13 @@ public class Training {
         }
         return  name.equals(((Training)that).name) &&
                 trainer.equals(((Training)that).trainer) &&
-                client.equals(((Training)that).client) &&
-                sets == ((Training)that).sets &&
-                reps == ((Training)that).reps;
+                client.equals(((Training)that).client);
     }
+
 
     @Override
     public int hashCode() {
-        return (reps + name.hashCode()) * sets;
+        return Objects.hash(name, trainer, client);
     }
 }
+

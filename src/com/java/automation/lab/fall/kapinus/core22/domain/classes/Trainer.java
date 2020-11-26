@@ -1,8 +1,8 @@
 package com.java.automation.lab.fall.kapinus.core22.domain.classes;
 
 import com.java.automation.lab.fall.kapinus.core22.domain.enums.TrainerSpecialization;
-import com.java.automation.lab.fall.kapinus.core22.domain.exceptions.AgeTrainerException;
-import com.java.automation.lab.fall.kapinus.core22.domain.exceptions.InvalidScheduleException;
+import com.exceptions.AgeTrainerException;
+import com.exceptions.InvalidScheduleException;
 
 import java.util.Arrays;
 

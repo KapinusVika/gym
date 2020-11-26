@@ -7,8 +7,8 @@ public class PowerTraining extends Training{
 
 
     public PowerTraining(PowerEquipment equipment, String name, Trainer trainer, Client client,
-                         int sets, int reps, double workingWeight) {
-        super(name, trainer, client, sets, reps);
+                         double workingWeight) {
+        super(name, trainer, client);
         this.equipment = equipment;
         this.workingWeight = workingWeight;
 

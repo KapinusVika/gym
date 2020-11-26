@@ -1,8 +1,6 @@
 package com.java.automation.lab.fall.kapinus.core22.domain.classes;
 
-import com.java.automation.lab.fall.kapinus.core22.domain.exceptions.InvalidCaloriesException;
-
-import java.util.Objects;
+import com.exceptions.InvalidCaloriesException;
 
 public class NutritionFacts {
     private double caloriesPerDay;

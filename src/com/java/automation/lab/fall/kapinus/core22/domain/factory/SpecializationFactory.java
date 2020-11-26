@@ -2,8 +2,8 @@ package com.java.automation.lab.fall.kapinus.core22.domain.factory;
 
 import com.java.automation.lab.fall.kapinus.core22.domain.classes.Trainer;
 import com.java.automation.lab.fall.kapinus.core22.domain.enums.TrainerSpecialization;
-import com.java.automation.lab.fall.kapinus.core22.domain.exceptions.AgeTrainerException;
-import com.java.automation.lab.fall.kapinus.core22.domain.exceptions.InvalidScheduleException;
+import com.exceptions.AgeTrainerException;
+import com.exceptions.InvalidScheduleException;
 
 public class SpecializationFactory {
     public static Trainer createTrainerGym

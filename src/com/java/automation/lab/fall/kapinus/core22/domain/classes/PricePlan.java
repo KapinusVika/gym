@@ -3,7 +3,7 @@ package com.java.automation.lab.fall.kapinus.core22.domain.classes;
 
 import com.java.automation.lab.fall.kapinus.core22.domain.enums.Discount;
 import com.java.automation.lab.fall.kapinus.core22.domain.enums.Price;
-import com.java.automation.lab.fall.kapinus.core22.domain.exceptions.InvalidDiscountException;
+import com.exceptions.InvalidDiscountException;
 
 public class PricePlan {
     private Price name;
