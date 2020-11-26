@@ -1,6 +1,8 @@
 package com.java.automation.lab.fall.kapinus.core22.domain;
 
-public class Subscription {
+import java.io.Serializable;
+
+public class Subscription implements Serializable {
     private String name;
     private Adress adress;
     private Contact contact;

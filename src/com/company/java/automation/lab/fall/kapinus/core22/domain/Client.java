@@ -3,10 +3,10 @@ package com.java.automation.lab.fall.kapinus.core22.domain;
 
 import com.java.automation.lab.fall.kapinus.core22.enums.AgeGroups;
 import com.java.automation.lab.fall.kapinus.core22.exceptions.AgeClientException;
-
+import java.io.Serializable;
 import java.util.Objects;
 
-public class Client {
+public class Client implements Serializable {
     private String name;
     private int age;
     private AgeGroups ageGroups;

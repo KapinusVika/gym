@@ -1,4 +1,4 @@
-package com.java.automation.lab.fall.kapinus.core22.dao.impl;
+package com.java.automation.lab.fall.kapinus.core22.dao.impl.mock;
 
 import com.java.automation.lab.fall.kapinus.core22.dao.daoModel.PricePlanDAO;
 import com.java.automation.lab.fall.kapinus.core22.domain.PricePlan;

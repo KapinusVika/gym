@@ -2,8 +2,9 @@ package com.java.automation.lab.fall.kapinus.core22.domain;
 
 import java.util.List;
 import java.util.Objects;
+import java.io.Serializable;
 
-public class GroupTraining {
+public class GroupTraining implements Serializable {
     private String name;
     private Trainer trainer;
     private List<Client> clients;

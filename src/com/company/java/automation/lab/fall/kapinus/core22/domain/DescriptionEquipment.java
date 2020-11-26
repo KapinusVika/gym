@@ -1,8 +1,9 @@
 package com.java.automation.lab.fall.kapinus.core22.domain;
 
 import java.util.Objects;
+import java.io.Serializable;
 
-public class DescriptionEquipment {
+public class DescriptionEquipment implements Serializable {
     private String name;
     private int weight;
     private String madeIn;

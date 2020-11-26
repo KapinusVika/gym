@@ -2,8 +2,9 @@ package com.java.automation.lab.fall.kapinus.core22.domain;
 
 
 import java.util.Objects;
+import java.io.Serializable;
 
-public class PowerEquipment extends Equipment {
+public class PowerEquipment extends Equipment implements Serializable {
     private String workingMuscle;
     private double maxWorkingWeight;
 

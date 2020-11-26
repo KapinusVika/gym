@@ -1,8 +1,9 @@
 package com.java.automation.lab.fall.kapinus.core22.domain;
 
 import com.java.automation.lab.fall.kapinus.core22.exceptions.InvalidCaloriesException;
+import java.io.Serializable;
 
-public class NutritionFacts {
+public class NutritionFacts implements Serializable{
     private double caloriesPerDay;
     private double proteinPerDay;
     private double carbohydratesPerDay;

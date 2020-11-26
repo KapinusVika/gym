@@ -1,8 +1,9 @@
 package com.java.automation.lab.fall.kapinus.core22.domain;
 
 import java.util.Objects;
+import java.io.Serializable;
 
-public class Training {
+public class Training implements Serializable {
     private String name;
     private Trainer trainer;
     private Client client;

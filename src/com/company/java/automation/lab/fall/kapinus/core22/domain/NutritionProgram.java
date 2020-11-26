@@ -1,6 +1,8 @@
 package com.java.automation.lab.fall.kapinus.core22.domain;
 
-public class NutritionProgram {
+import java.io.Serializable;
+
+public class NutritionProgram implements Serializable{
     private String nameDiet;
     private NutritionFacts nutritionFacts;
     private String excludedProducts;

@@ -4,8 +4,9 @@ package com.java.automation.lab.fall.kapinus.core22.domain;
 import com.java.automation.lab.fall.kapinus.core22.enums.Discount;
 import com.java.automation.lab.fall.kapinus.core22.enums.Price;
 import com.java.automation.lab.fall.kapinus.core22.exceptions.InvalidDiscountException;
+import java.io.Serializable;
 
-public class PricePlan {
+public class PricePlan implements Serializable{
     private Price name;
     private Discount nameDiscount;
     private int discount;

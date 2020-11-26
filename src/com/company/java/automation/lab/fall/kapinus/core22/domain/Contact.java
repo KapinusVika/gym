@@ -1,8 +1,9 @@
 package com.java.automation.lab.fall.kapinus.core22.domain;
 
 import java.net.URL;
+import java.io.Serializable;
 
-public class Contact {
+public class Contact implements Serializable{
     private String phoneNumber;
     private URL instagramAcc;
 

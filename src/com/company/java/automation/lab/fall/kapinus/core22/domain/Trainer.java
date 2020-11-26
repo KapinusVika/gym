@@ -3,11 +3,12 @@ package com.java.automation.lab.fall.kapinus.core22.domain;
 import com.java.automation.lab.fall.kapinus.core22.enums.TrainerSpecialization;
 import com.java.automation.lab.fall.kapinus.core22.exceptions.AgeTrainerException;
 import com.java.automation.lab.fall.kapinus.core22.exceptions.InvalidScheduleException;
+import java.io.Serializable;
 
 import java.util.Arrays;
 import java.util.Objects;
 
-public class Trainer {
+public class Trainer implements Serializable{
     private String name;
     private int age;
     private TrainerSpecialization trainerSpecialization;

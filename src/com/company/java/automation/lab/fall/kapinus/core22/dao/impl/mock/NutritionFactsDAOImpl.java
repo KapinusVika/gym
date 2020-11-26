@@ -1,6 +1,6 @@
-package com.java.automation.lab.fall.kapinus.core22.dao.impl;
+package com.java.automation.lab.fall.kapinus.core22.dao.impl.mock;
 
-import com.java.automation.lab.fall.kapinus.core22.dao.daoModel.NutritionFactsDAO;
+import com.java.automation.lab.fall.kapinus.core22.dao.daoModel.DAO;
 import com.java.automation.lab.fall.kapinus.core22.domain.NutritionFacts;
 import com.java.automation.lab.fall.kapinus.core22.exceptions.InvalidCaloriesException;
 import com.java.automation.lab.fall.kapinus.core22.exceptions.NotImplementetExc;

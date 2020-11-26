@@ -1,7 +1,8 @@
 package com.java.automation.lab.fall.kapinus.core22.domain;
 
+import java.io.Serializable;
 
-public class Adress {
+public class Adress implements Serializable {
     private String city;
     private String street;
     private int build;

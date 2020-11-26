@@ -1,8 +1,9 @@
 package com.java.automation.lab.fall.kapinus.core22.domain;
 
 import java.util.Objects;
+import java.io.Serializable;
 
-public class CardioEquipment extends Equipment{
+public class CardioEquipment extends Equipment implements Serializable{
     private double maxWeight;
 
     public CardioEquipment(DescriptionEquipment descriptionEquipment, double maxWeight){

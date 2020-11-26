@@ -1,4 +1,4 @@
-package com.java.automation.lab.fall.kapinus.core22.dao.impl;
+package com.java.automation.lab.fall.kapinus.core22.dao.impl.mock;
 
 import com.java.automation.lab.fall.kapinus.core22.dao.daoModel.DAO;
 import com.java.automation.lab.fall.kapinus.core22.domain.TrainingProgram;
@@ -16,7 +16,6 @@ public class TrainingProgramDAOImpl implements DAO<TrainingProgram> {
         }
         return instance;
     }
-
 
     @Override
     public TrainingProgram create(TrainingProgram trainingProgram) {

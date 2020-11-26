@@ -1,7 +1,7 @@
-package com.java.automation.lab.fall.kapinus.core22.dao.impl;
+package com.java.automation.lab.fall.kapinus.core22.dao.impl.mock;
 
 import com.java.automation.lab.fall.kapinus.core22.domain.Trainer;
-import com.java.automation.lab.fall.kapinus.core22.dao.daoModel.TrainerDAO;
+import com.java.automation.lab.fall.kapinus.core22.dao.daoModel.DAO;
 import com.java.automation.lab.fall.kapinus.core22.exceptions.AgeTrainerException;
 import com.java.automation.lab.fall.kapinus.core22.exceptions.InvalidScheduleException;
 import com.java.automation.lab.fall.kapinus.core22.exceptions.NotImplementetExc;

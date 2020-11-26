@@ -1,5 +1,6 @@
 package com.java.automation.lab.fall.kapinus.core22.domain;
 
+
 public class CardioTraining extends Training {
     private CardioEquipment equipment;
     private double duration;
